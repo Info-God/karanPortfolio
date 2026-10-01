@@ -23,10 +23,10 @@ const greeting = {
   username: "Karunagaran Velmourougane",
   title: "Hi all, I'm Karunagaran",
   subTitle: emoji(
-    "Full Stack Developer specializing in PHP (Laravel, CodeIgniter), JavaScript & React. Experienced in deploying on cloud servers and leading frontend projects from concept to launch. I build scalable applications and robust APIs."
+    "Full-Stack Software Engineer specializing in backend systems, databases, Laravel, Spring Boot, React, and AI automation. I build scalable APIs, SaaS products, and production-ready applications."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ygR7hcKEf_9H-Cj2QUe5kbOzXrj_HRim/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1R0KMW0CIGI0oz9TBpvx2w7n6lWsymbpR/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -49,14 +49,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Full Stack Developer passionate about building robust backend systems and deploying real-world applications",
+  subTitle: "Full-Stack Engineer passionate about backend systems, databases, AI automation, and production software",
   skills: [
-    emoji("⚡ Design and develop scalable backend architectures using PHP (Laravel, CodeIgniter) and MySQL"),
-    emoji("⚡ Build and maintain RESTful APIs for web dashboards, admin panels, and portals"),
-    emoji("⚡ Lead small dev teams, manage full project lifecycles, and ensure on-time delivery"),
-    emoji("⚡ Optimize database performance using stored procedures, views, and query optimization techniques"),
-    emoji("⚡ Deploy and manage applications on Linux servers with Nginx, ensuring uptime and performance"),
-    emoji("⚡ Integrate third-party services like AWS, DigitalOcean, Cloudflare, and SMTP/email APIs")
+    emoji("⚡ Design and develop scalable backend architectures with Java, Spring Boot, PHP, Laravel, and FastAPI"),
+    emoji("⚡ Build REST APIs and full-stack SaaS products with React, Next.js, Vue.js, and Node.js"),
+    emoji("⚡ Engineer reliable data systems with MySQL, PostgreSQL, Redis, indexing, and SQL optimization"),
+    emoji("⚡ Build agentic AI, RAG, tool-calling, and workflow automation systems"),
+    emoji("⚡ Deploy and manage production applications with AWS, Docker, Linux, Nginx, and VPS infrastructure"),
+    emoji("⚡ Lead client projects end-to-end, from architecture and development through deployment and support")
   ],
 
 
@@ -77,6 +77,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
+    {
+      skillName: "Python",
+      fontAwesomeClassname: "fab fa-python"
+    },
 
     {
       skillName: "MYSQL",
@@ -90,8 +94,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Laravel",
       fontAwesomeClassname: "fab fa-laravel"
-    }
-    ,
+    },
     {
       skillName: "Codeigniter",
       fontAwesomeClassname: "https://codeigniter.com/assets/images/codeigniter4logo.png"
@@ -105,6 +108,14 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "Java",
       fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "Spring Boot",
+      fontAwesomeClassname: "fas fa-leaf"
+    },
+    {
+      skillName: "React",
+      fontAwesomeClassname: "fab fa-react"
     },
     {
       skillName: "Github",
@@ -178,14 +189,14 @@ const workExperiences = {
   experience: [
     {
       role: "Freelance Full Stack Developer",
-      company: "Self-Employed",
+      company: "FDRP Journals",
       companylogo: require("./assets/images/freelancer.webp"), // Replace with actual logo or placeholder
       date: "September 2024 – Present",
-      desc: "Working directly with clients to build, deploy, and maintain full-stack web applications. Leading small development teams and handling the entire software development lifecycle.",
+      desc: "Manage production journal platforms and client delivery across architecture, development, deployment, and support.",
       descBullets: [
-        "Planned and structured projects, developed full-stack applications from scratch",
-        "Managed a small team, assigned tasks, and ensured timely delivery",
-        "Handled server deployments and performance monitoring for smooth operation"
+        "Managed 3 production projects end-to-end, from client communication through deployment and support",
+        "Built full-stack SaaS products with Laravel, React, Vue.js, and Next.js",
+        "Reduced AWS infrastructure costs by approximately 80% through VPS migration"
       ]
     },
     {
@@ -193,11 +204,11 @@ const workExperiences = {
       company: "Senchola Technology Solutions",
       companylogo: require("./assets/images/senchola.png"), // Replace with your company logo
       date: "September 2023 – August 2024",
-      desc: "Worked on multiple full-stack projects, primarily focusing on backend development using Laravel and CodeIgniter. Maintained servers and ensured seamless live deployments.",
+      desc: "Delivered backend and full-stack systems for client and enterprise projects, with a focus on APIs, databases, and production operations.",
       descBullets: [
-        "Completed 5+ full projects from planning to deployment",
-        "Built scalable REST APIs and admin dashboards",
-        "Handled Linux server setup, domain configuration, and production deployment"
+        "Delivered 3+ client and enterprise projects",
+        "Improved SQL response time by approximately 20% on an RBI enterprise project",
+        "Trained 3 batches of 20+ students in backend development and SQL optimization"
       ]
     },
 
@@ -234,11 +245,11 @@ const bigProjects = {
       image: require("./assets/images/rbi.jpeg"), // Use RBI or HRMS-relevant logo
       projectName: "RBI HRMS Modernization",
       projectDesc:
-        "Contributed to modernizing the HRMS system for an RBI paper printing unit. Focused on salary, tax, and leave modules using PHP and MySQL.",
+        "Migrated a 1 TB+ enterprise HRMS from PHP 5 to PHP 8 while preserving production data. Optimized 15+ critical SQL queries with views, indexing, and query restructuring, reducing execution time by approximately 20%.",
       footerLink: [
         {
           name: "Project Summary",
-          url: "#" // Replace with a PDF/project blog link or remove if not public
+          url: "https://www.rbi.org.in/"
         }
       ]
     },
@@ -246,11 +257,11 @@ const bigProjects = {
       image: require("./assets/images/placeholder.png"), // Replace with your actual logo or a placeholder
       projectName: "Make My Scholar",
       projectDesc:
-        "A social media platform for students, researchers, and scholars to publish and share academic work — similar to Academia.edu. Built features for profiles, feeds, publication uploads, and interest-based recommendations.",
+        "A social network connecting publishers, authors, and researchers. Built social feeds, follows, messaging, and scholarly collaboration features with Laravel, React, Redis queues, workers, Pusher, and WebSockets.",
       footerLink: [
         {
           name: "Visit Website",
-          url: "https://makemyscholar.com/" // Replace with actual URL when live
+          url: "https://makemyscholarfrontend.fdrpjournals.org/"
         }
       ]
     },
@@ -258,7 +269,7 @@ const bigProjects = {
   image: require("./assets/images/fdrp.png"), // Replace with the actual logo or use a placeholder
   projectName: "FDRP Journals",
   projectDesc:
-    "Ongoing freelance work for FDRP Journals, managing and maintaining multiple journal websites including ijsreat.com, ijrtmr.com, theijire.com, and indjcst.com. Responsibilities include backend development using Laravel, frontend development using Vue and React, server-side management on VPS (Contabo), and MySQL database administration.",
+    "Production journal ecosystem covering editorial workflow, peer review, publishing, and public journal websites. Built and maintained Laravel backends, React and Vue frontends, VPS infrastructure, and MySQL databases across a portfolio of 8 journals.",
   footerLink: [
     {
       name: "Visit Website",
@@ -270,7 +281,7 @@ const bigProjects = {
     },
             {
       name: "IJRTMR Journal",
-      url: "https://www.ijsreat.com/"
+              url: "https://ijrtmr.com/"
     }
     // You can add more URLs for other journal sites if needed
   ]
@@ -373,6 +384,8 @@ const podcastSection = {
 const resumeSection = {
   title: "Resume",
   subtitle: "Feel free to download my resume",
+  resumeLink:
+    "https://drive.google.com/file/d/1R0KMW0CIGI0oz9TBpvx2w7n6lWsymbpR/view?usp=sharing",
 
   // Please Provide with Your Podcast embeded Link
   display: true // Set false to hide this section, defaults to true
@@ -393,7 +406,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
